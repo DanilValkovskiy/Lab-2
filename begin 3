@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Введення розміру файлу в байтах
+    cout <<"___begin 3___"<<endl;
+    cout << "Введіть розмір файлу в байтах: ";
+    int fileSizeInBytes;
+    cin >> fileSizeInBytes;
+
+    // Знаходження кількості повних кілобайт
+    int kilobytes = fileSizeInBytes / 1024;
+
+    // Виведення результату
+    cout << "Розмір файлу в повних кілобайтах: " << kilobytes << " KB\n";
+
+    return 0;
+}
